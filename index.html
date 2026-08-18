@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kyle Anderson — Full-Stack Engineer</title>
+  <title>Entrepreneur • Artist • Creative • Founder</title>
   <meta name="description"
     content="Official portfolio of Kyle Anderson, an AI/ML Engineer specializing in Machine Learning, Deep Learning, Computer Vision, and NLP. View my projects, experience, and certifications." />
   <meta name="keywords"
@@ -196,6 +197,12 @@
       font-size: 0.8rem;
       text-decoration: none;
       transition: top 0.2s ease;
+    }
+
+    .font2rem {
+      font-size: 2rem;
+      color: #35E7C7;
+      border: #35E7C7;
     }
 
     .skip-link:focus {
@@ -599,6 +606,18 @@
       gap: 14px;
     }
 
+    .section-eyebrow-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.24em;
+      color: var(--copper);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
     .section-eyebrow::after {
       content: '';
       flex: 1;
@@ -755,7 +774,8 @@
 
     .exp-item {
       position: relative;
-      margin-bottom: 52px;
+      margin-bottom: 0px;
+      padding-top: 10px;
       opacity: 0;
       transform: translateY(24px);
       transition: opacity 0.6s ease, transform 0.6s ease;
@@ -842,6 +862,7 @@
     }
 
     .projects-grid {
+      margin-top: 70px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
       gap: 24px;
@@ -918,6 +939,13 @@
 
     .project-desc {
       font-size: 0.86rem;
+      color: var(--steel);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .project-desc-intro {
+      font-size: 1.86rem;
       color: var(--steel);
       line-height: 1.7;
       margin-bottom: 20px;
@@ -1591,8 +1619,8 @@
   <nav aria-label="Primary">
     <div class="nav-logo">Kyle <span>Anderson</span></div>
     <ul class="nav-links" id="primary-nav-links">
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">About me</a></li>
+      <li><a href="#projects">Work History</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -1629,12 +1657,15 @@
   <section id="hero">
 
     <div class="hero-text">
-      <div class="hero-eyebrow">Full-Stack Engineer, United States</div>
+      <div class="hero-eyebrow">RealKyleGifted, United States</div>
       <h1 class="hero-name">Kyle<br /><em>Anderson</em></h1>
-      <p class="hero-title">Full-Stack Development · React · Next.js · Node.js · Python · Cloud Applications</p>
+      <p class="hero-title">Entrepreneur • Artist • Creative • Founder</p>
       <p class="hero-summary">
-Kyle Anderson is a Full-Stack Engineer with a strong foundation in computer science, software engineering, and modern web technologies. He earned a Bachelor of Science in Computer Science from the University of Illinois Urbana-Champaign (May 2016), where he developed expertise in algorithms, software development, databases, and computational systems.
-      </p>
+        I’m Kyle Anderson, also known as RealKyleGifted — an entrepreneur, recording artist, creative, and founder
+        focused on building something meaningful from the ground up.
+        My journey has shaped the way I see business, creativity, fashion, music, and life. I believe your past does not
+        have to define your future. I’m using everything I’ve experienced to create businesses, music, products, and
+        opportunities that represent who I am becoming.
       <div class="hero-cta-row">
         <a href="mailto:akyle0720@gmail.com" class="btn-primary">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -1656,26 +1687,14 @@ Kyle Anderson is a Full-Stack Engineer with a strong foundation in computer scie
 
     <div class="hero-photo-wrap">
       <div class="photo-frame">
-        <div class="cgpa-badge">Full-Stack</div>
+        <div class="cgpa-badge">RealKyleGifted</div>
         <!-- Profile photo from uploaded image -->
         <img src="Profile.jpeg" alt="Aditya Swain" />
         <div class="photo-accent-tl"></div>
         <div class="photo-accent-br"></div>
       </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-num">7</span>
-          <span class="stat-label">years<br />Experience</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">2</span>
-          <span class="stat-label">Internships<br />Completed</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">9+</span>
-          <span class="stat-label">Python<br />Projects</span>
-        </div>
-      </div>
+      <!-- <div class="hero-stats">
+      </div> -->
     </div>
   </section>
 
@@ -1686,38 +1705,16 @@ Kyle Anderson is a Full-Stack Engineer with a strong foundation in computer scie
 
   <!-- ═══ EXPERIENCE ═══ -->
   <section id="experience">
-    <div class="section-eyebrow">Work History</div>
-    <h2 class="section-title">7 years of <strong>development experience</strong></h2>
-
+    <div class="section-eyebrow">About me</div>
     <div class="exp-timeline">
       <div class="exp-item">
-        <div class="exp-header">
-          <div>
-            <div class="exp-role">Python Backend Developer | Full Stack Developer(2019-2023)</div>
-          </div>
-        </div>
-        <ul class="exp-bullets">
-          <li>Developed and deployed full-stack web applications using Python, Django/Flask, JavaScript, HTML, CSS, and SQL, building scalable backend services and responsive user interfaces.</li>
-          <li>Designed and implemented RESTful APIs for seamless communication between frontend components and backend systems, improving application functionality and user experience.</li>
-          <li>Built and optimized database-driven applications using MySQL, including database schema design, query optimization, CRUD operations, and data management workflows.</li>
-          <li>Integrated authentication, form handling, and backend business logic to create secure and efficient web applications for real-world use cases.</li>
-          <li>The facial recognition system was adopted for actual operational use within the internship period.</li>
-        </ul>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-header">
-          <div>
-            <div class="exp-role">Full-Stack Engineer(2024-2026)</div>
-          </div>
-        </div>
-        <ul class="exp-bullets">
-          <li>Designed and developed full-stack web applications using modern frontend and backend technologies, creating responsive user interfaces and scalable server-side solutions.
-          </li>
-          <li>Built and integrated RESTful APIs for application features, handling backend logic, data processing, authentication, and communication between frontend and database systems.</li>
-          <li>Developed database-driven applications with efficient data modeling, CRUD operations, and optimized queries using SQL and NoSQL databases.</li>
-          <li>Managed the complete software development lifecycle independently, including requirements analysis, UI implementation, backend development, testing, debugging, deployment, and technical documentation.</li>
-        </ul>
+        <p class="project-desc-intro">I’m from Decatur, Illinois, and my journey has never been about taking the easy
+          road. I’ve experienced setbacks, obstacles, and moments that forced me to grow.<br> But I chose to keep moving
+          forward.
+          Today, I’m focused on entrepreneurship, music, fashion, media, and building my personal brand. Through my
+          work, I want to inspire people to believe that they can rebuild, reinvent themselves, and create their own
+          path.
+          I’m not interested in simply creating something for attention. I’m building a foundation for a legacy.</p>
       </div>
     </div>
   </section>
@@ -1726,125 +1723,126 @@ Kyle Anderson is a Full-Stack Engineer with a strong foundation in computer scie
 
   <!-- ═══ PROJECTS ═══ -->
   <section id="projects">
-    <div class="section-eyebrow">Key Projects</div>
-    <h2 class="section-title">Systems That <strong>Work in Production</strong></h2>
-
-    <div class="filter-bar fade-up">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="cv">Computer Vision</button>
-      <button class="filter-btn" data-filter="nlp">NLP</button>
+    <div class="section-eyebrow-title">work history</div>
+    <div class="exp-timeline">
+      <div class="exp-item">
+        <div class="section-eyebrow-title">Entrepreneurship</div>
+        <p class="project-desc">I’m the founder of SoulyTheOne Collective LLC, a lifestyle-focused brand built around
+          fashion, music, creativity, media, and entrepreneurship.</p>
+      </div>
     </div>
-
+    <div class="exp-timeline">
+      <div class="exp-item">
+        <div class="section-eyebrow-title">Music</div>
+        <p class="project-desc">As RealKyleGifted, I create and release music while developing my identity as an
+          independent artist.
+          My music represents my experiences, ambition, struggles, growth, and the mindset of continuing to push
+          forward.</p>
+      </div>
+    </div>
+    <div class="exp-timeline">
+      <div class="exp-item">
+        <div class="section-eyebrow-title">Fashion</div>
+        <p class="project-desc">Fashion is another part of my creative expression. I’m developing premium streetwear and
+          lifestyle products through SoulyTheOne Collective.</p>
+      </div>
+    </div>
+    <div class="exp-timeline">
+      <div class="exp-item">
+        <div class="section-eyebrow-title">Media & Content</div>
+        <p class="project-desc">I create content across social media, music platforms, and digital channels to document
+          the journey and connect with people who relate to the vision.</p>
+      </div>
+    </div>
+    <div class="exp-timeline">
+      <div class="exp-item">
+        <div class="section-eyebrow-title">Create. Inspire. Build. Evolve.</div>
+        <p class="project-desc">I want to build brands and creative projects that represent originality, ambition,
+          resilience, and individuality while creating opportunities for myself and others.</p>
+      </div>
+    </div>
+    <div class="exp-timeline">
+      <div class="exp-item">
+        <div class="section-eyebrow-title">My Story</div>
+        <p class="project-desc">My story is still being written.
+          I’ve had to start over, learn from difficult experiences, and figure out how to turn my creativity into
+          something bigger than myself.
+          Instead of allowing my past to become my identity, I’m using it as part of the foundation for my future.
+          Every business, song, design, video, and idea is another step toward the bigger vision.</p>
+      </div>
+    </div>
     <div class="projects-grid">
 
 
       <div class="project-card" data-category="nlp">
         <div class="project-num">01</div>
-        <div class="project-name">NLP Multi-Class Text Classification Pipeline</div>
+        <div class="project-name">SoulyTheOne Collective</div>
+        <div class="project-name">Founder: Kyle Anderson</div>
         <p class="project-desc">
-          Complete NLP pipeline: raw text cleaning → tokenisation → stop-word removal → TF-IDF feature extraction → word
-          embedding generation → deep neural network classifier with dropout and early stopping. Evaluated on accuracy,
-          precision, recall, and F1-score across all classes. Fully documented for reproducibility.
+          SoulyTheOne Collective is a lifestyle brand combining:
+        <ul>
+          <li>Fashion</li>
+          <li>Music</li>
+          <li>Art</li>
+          <li>Media</li>
+          <li>Entrepreneurship</li>
+          <li>Culture</li>
+        </ul>
+        The vision is to create a recognizable brand that represents individuality and a higher level of creativity.
+        Creative Philosophy
+        “Don’t wait for somebody to give you an opportunity. Build something that creates one.”
+        I believe consistency, creativity, and authenticity matter more than trying to fit into somebody else’s
+        blueprint.
         </p>
-        <div class="project-tech">
-          <span class="tag">NLP</span><span class="tag">TF-IDF</span><span class="tag">Word Embeddings</span>
-          <span class="tag">Deep Neural Network</span><span class="tag">Kaggle</span>
-        </div>
+
         <!-- TODO: replace # with your real GitHub repo URL -->
-        <div class="project-links">
-          <a href="#" target="_blank" rel="noopener" class="project-link">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
-            </svg>
-            Code
-          </a>
-          <span class="project-link demo disabled">Notebook · No Live Demo</span>
-        </div>
+
       </div>
 
       <div class="project-card" data-category="cv">
         <div class="project-num">02</div>
-        <div class="project-name">Custom Object Detection Pipeline</div>
+        <div class="project-name">Current Focus</div>
         <p class="project-desc">
-          Developed custom object detection pipelines on custom-labelled datasets using transfer learning with
-          pre-trained CNN architectures. Applied extensive data augmentation (rotation, scaling, contrast adjustment)
-          and regularisation strategies to improve model generalisation and significantly reduce overfitting.
+          Right now, I’m focused on:
+        <ul>
+          <li>Growing SoulyTheOne Collective</li>
+          <li>Developing my clothing line</li>
+          <li>Releasing and promoting music</li>
+          <li>Building my personal brand</li>
+          <li>Expanding my online presence</li>
+          <li>Developing collaborations</li>
+          <li>Creating new business opportunities</li>
+          <li>Building a long-term legacy</li>
+        </ul>
+        My goal is to build more than individual projects—I’m focused on creating a connected ecosystem of brands,
+        ideas, businesses, and creative work that can grow over time and create meaningful opportunities for myself and
+        others.
         </p>
-        <div class="project-tech">
-          <span class="tag">CNN</span><span class="tag">TensorFlow</span><span class="tag">Keras</span>
-          <span class="tag">Transfer Learning</span><span class="tag">Data Augmentation</span><span class="tag">Computer
-            Vision</span>
-        </div>
+
         <!-- TODO: replace # with your real GitHub repo URL -->
-        <div class="project-links">
-          <a href="#" target="_blank" rel="noopener" class="project-link">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
-            </svg>
-            Code
-          </a>
-          <a href="#" target="_blank" rel="noopener" class="project-link demo">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-              <polyline points="15 3 21 3 21 9" />
-              <line x1="10" y1="14" x2="21" y2="3" />
-            </svg>
-            Live Demo
-          </a>
-        </div>
+
       </div>
 
       <div class="project-card" data-category="cv">
         <div class="project-num">03</div>
-        <div class="project-name">Landmark Detection & Image Classification</div>
+        <div class="project-name">What I’m Looking For</div>
         <p class="project-desc">
-          Built an end-to-end image classification and landmark detection system using CNN architectures in TensorFlow
-          and Keras — from raw data ingestion and preprocessing through to training, evaluation, and inference. Applied
-          data augmentation and regularisation for production-grade generalisation.
-        </p>
-        <div class="project-tech">
-          <span class="tag">CNN</span><span class="tag">TensorFlow</span><span class="tag">Transfer Learning</span>
-          <span class="tag">Data Augmentation</span><span class="tag">Batch Normalisation</span>
-        </div>
-        <!-- TODO: replace # with your real GitHub repo URL -->
-        <div class="project-links">
-          <a href="#" target="_blank" rel="noopener" class="project-link">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
-            </svg>
-            Code
-          </a>
-          <span class="project-link demo disabled">Notebook · No Live Demo</span>
-        </div>
-      </div>
+          I’m open to connecting with forward-thinking individuals, brands, artists, and companies interested in
+          building meaningful long-term collaborations across brand partnerships, music, fashion, media, creative
+          projects, technology, and entrepreneurship.
 
-      <div class="project-card" data-category="cv">
-        <div class="project-num">04</div>
-        <div class="project-name">Facial Recognition Attendance System</div>
-        <p class="project-desc">
-          End-to-end real-time pipeline: live video → Haar Cascade face detection → CNN-based identification → automatic
-          MySQL timestamp logging. Data augmentation (rotation, brightness, flipping) ensured reliable performance under
-          varied lighting and angles. Adopted for live operations at CTTC MSME.
+          I value creativity, professionalism, strong communication, and ambitious ideas. Whether it’s developing a new
+          brand partnership, collaborating on a creative project, exploring opportunities in music and fashion, or
+          building a business from the ground up, I’m interested in working with people who are committed to creating
+          something distinctive and valuable.
+
+          I believe the strongest collaborations are built on shared vision, trust, complementary skills, and a
+          willingness to turn ideas into execution. If the vision makes sense and there is an opportunity to create
+          genuine value together, I’m open to the conversation.
+
+          Personal Brand Statement:
+          I’m not defined by where I started. I’m defined by what I’m building—and by the value I create along the way.
         </p>
-        <div class="project-tech">
-          <span class="tag">CNN</span><span class="tag">TensorFlow</span><span class="tag">Keras</span>
-          <span class="tag">OpenCV</span><span class="tag">MySQL</span><span class="tag">Haar Cascade</span><span
-            class="tag">Biometrics</span>
-        </div>
-        <!-- TODO: replace # with your real GitHub repo URL -->
-        <div class="project-links">
-          <a href="#" target="_blank" rel="noopener" class="project-link">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
-            </svg>
-            Code
-          </a>
-          <span class="project-link demo disabled">Deployed On-Site · No Public Demo</span>
-        </div>
       </div>
     </div>
   </section>
@@ -1880,22 +1878,22 @@ Kyle Anderson is a Full-Stack Engineer with a strong foundation in computer scie
         <li class="cert-item fade-up">
           <div class="cert-icon">🎓</div>
           <div class="cert-info">
-            <div class="cert-name">Full-Stack Web Development Training Program</div>
-            <div class="cert-org">Frontend Development, Backend Engineering, Databases, REST APIs</div>
+            <div class="cert-name">Entrepreneurship & Business Development</div>
+            <div class="cert-org">Focused on developing business ideas, strategic thinking, brand development, and turning creative concepts into sustainable opportunities.</div>
           </div>
         </li>
         <li class="cert-item fade-up">
           <div class="cert-icon">💻</div>
           <div class="cert-info">
-            <div class="cert-name">Full-Stack Engineer Internship Certification</div>
-            <div class="cert-org">1stop.ai · Remote</div>
+            <div class="cert-name">Creative & Media Development</div>
+            <div class="cert-org">Experience across music, media, content creation, creative direction, and digital storytelling, with an emphasis on developing a distinctive creative identity.</div>
           </div>
         </li>
         <li class="cert-item fade-up">
           <div class="cert-icon">🌐</div>
           <div class="cert-info">
-            <div class="cert-name">Active Full-Stack Developer</div>
-            <div class="cert-org">React, Next.js, Node.js, Python, SQL/NoSQL, Cloud Deployment</div>
+            <div class="cert-name">Founder & Creative Entrepreneur</div>
+            <div class="cert-org">Building and developing independent ventures across creative, fashion, media, and digital spaces with a long-term focus on growth, collaboration, and meaningful impact.</div>
           </div>
         </li>
       </ul>
@@ -1904,43 +1902,16 @@ Kyle Anderson is a Full-Stack Engineer with a strong foundation in computer scie
 
   <hr class="hr-copper" />
 
-  <!-- ═══ ACHIEVEMENTS ═══ -->
-  <section id="achievements">
-    <div class="section-eyebrow">Highlights</div>
-    <h2 class="section-title">What Sets <strong>Kyle Anderson</strong></h2>
-
-    <div class="ach-grid">
-      <div class="ach-card fade-up">
-        <div class="ach-icon">🏆</div>
-        <div class="ach-title">Full-Stack Development Experience</div>
-        <p class="ach-text">Built and delivered full-stack web applications through professional internships, balancing frontend development, backend engineering, API integration, and database management while completing a full-time Computer Science degree. Demonstrated strong self-motivation, problem-solving ability, time management, and commitment to building scalable real-world software solutions.</p>
-      </div>
-      <div class="ach-card fade-up">
-        <div class="ach-icon">🚀</div>
-        <div class="ach-title">Production Deployments</div>
-        <p class="ach-text">Delivered production-ready full-stack applications with responsive user interfaces, scalable backend services, and database-driven functionality. Managed the complete deployment process, including development, testing, debugging, optimization, and cloud hosting.</p>
-      </div>
-      <div class="ach-card fade-up">
-        <div class="ach-icon">🎓</div>
-        <div class="ach-title">Full-Stack Engineering Foundation</div>
-        <p class="ach-text">Graduated in Computer Science & Engineering from University of Illinois Urbana-Champaign in May 2016, developing a strong foundation in software engineering, web technologies, database systems, and full-stack application development. Built expertise in designing scalable frontend interfaces, backend services, APIs, and modern software solutions through hands-on projects and development experience.</p>
-      </div>
-      <div class="ach-card fade-up">
-        <div class="ach-icon">🧠</div>
-        <div class="ach-title">Empirical Problem Solving</div>
-        <p class="ach-text">Active software developer, building and optimizing full-stack web applications through practical problem-solving, clean architecture, and data-driven improvements. Experienced in developing scalable frontend interfaces, backend APIs, database solutions, and deploying production-ready applications using modern web technologies.</p>
-      </div>
-    </div>
-  </section>
-
-  <hr class="hr-copper" />
 
   <!-- ═══ CONTACT ═══ -->
   <section id="contact">
     <div class="section-eyebrow" style="justify-content:center;">Let's Connect</div>
-    <h2 class="section-title" style="text-align:center;">Open to Full-Time <strong>Full-Stack Engineer Roles</strong></h2>
+    <h2 class="section-title" style="text-align:center;">For business, collaboration, music, fashion, media, or
+      partnership opportunities</h2>
     <p style="text-align:center;color:var(--steel);max-width:480px;margin:0 auto;font-size:0.9rem;line-height:1.8;">
-      I'm actively looking for a full-time Full-Stack Engineer position. I enjoy building scalable web applications, creating seamless user experiences, and developing reliable backend systems. If you're building modern digital products, let's talk.
+      Kyle Anderson / RealKyleGifted
+      Founder — SoulyTheOne Collective LLC
+      Building from the ground up. Creating with purpose. Leaving a legacy. Let's connect!
     </p>
 
     <!--
@@ -1950,8 +1921,7 @@ Kyle Anderson is a Full-Stack Engineer with a strong foundation in computer scie
       submission after that lands directly in the inbox.
       Docs: https://formsubmit.co
     -->
-    <form class="contact-form" id="contact-form" action="https://formsubmit.co/ajax/akyle0720@gmail.com"
-      method="POST">
+    <form class="contact-form" id="contact-form" action="https://formsubmit.co/ajax/akyle0720@gmail.com" method="POST">
       <input type="hidden" name="_subject" value="New portfolio message from your website" />
       <input type="hidden" name="_captcha" value="false" />
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
@@ -2002,6 +1972,15 @@ Kyle Anderson is a Full-Stack Engineer with a strong foundation in computer scie
   <footer>
     <div class="footer-copy">© 2026 Kyle Anderson · All Rights Reserved</div>
 
+    <a href="https://www.facebook.com/share/1az92XUa5i/?mibextid=wwXIfr" target="_blank" class="font2rem">
+      <i class="fa-brands fa-facebook"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/kyle-anderson-897784376?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="font2rem">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="https://open.spotify.com/artist/28kV5GwvNbTf1itDnhZCLI?si=1h-B8OTjRbOQBLu613eVhQ" target="_blank" class="font2rem">
+      <i class="fa-brands fa-spotify"></i>
+    </a>
 
   </footer>
 
@@ -2022,7 +2001,7 @@ Kyle Anderson is a Full-Stack Engineer with a strong foundation in computer scie
     window.addEventListener('resize', resize);
 
     class Particle {
-      constructor() { this.reset(); }
+      constructor() {this.reset();}
       reset() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
@@ -2062,7 +2041,7 @@ Kyle Anderson is a Full-Stack Engineer with a strong foundation in computer scie
 
     function animParticles() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      particles.forEach(p => { p.update(); p.draw(); });
+      particles.forEach(p => {p.update(); p.draw();});
       requestAnimationFrame(animParticles);
     }
     animParticles();
@@ -2074,7 +2053,7 @@ Kyle Anderson is a Full-Stack Engineer with a strong foundation in computer scie
           e.target.classList.add('visible');
         }
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    }, {threshold: 0.12, rootMargin: '0px 0px -40px 0px'});
 
     document.querySelectorAll('.exp-item, .project-card, .fade-up').forEach(el => observer.observe(el));
 
@@ -2105,7 +2084,7 @@ Kyle Anderson is a Full-Stack Engineer with a strong foundation in computer scie
           if (active) active.style.color = '#7C6FFF';
         }
       });
-    }, { threshold: 0.4 });
+    }, {threshold: 0.4});
 
     sections.forEach(s => navObserver.observe(s));
 
@@ -2155,7 +2134,7 @@ Kyle Anderson is a Full-Stack Engineer with a strong foundation in computer scie
     });
 
     backToTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({top: 0, behavior: 'smooth'});
     });
 
     /* ─── CARD SPOTLIGHT (cursor-tracking glow) ─── */
@@ -2212,7 +2191,7 @@ Kyle Anderson is a Full-Stack Engineer with a strong foundation in computer scie
         try {
           const res = await fetch(contactForm.action, {
             method: 'POST',
-            headers: { 'Accept': 'application/json' },
+            headers: {'Accept': 'application/json'},
             body: new FormData(contactForm)
           });
 
